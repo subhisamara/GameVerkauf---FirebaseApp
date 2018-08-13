@@ -2,7 +2,7 @@
 //  Contact.swift
 //  gameVerkauf
 //
-//  Created by Karam Shabita on 04.06.17.
+//  Created by Subhi M. Samara on 21.06.17.
 //
 //
 

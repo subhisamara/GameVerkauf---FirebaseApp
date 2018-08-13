@@ -2,7 +2,7 @@
 //  GameReview.swift
 //  gameVerkauf
 //
-//  Created by Adam Mahmoud on 7/12/17.
+//  Created by Subhi M. Samara on 21.06.17.
 //
 //
 

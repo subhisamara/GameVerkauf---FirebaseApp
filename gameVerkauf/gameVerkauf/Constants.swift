@@ -2,7 +2,6 @@
 //  Constants.swift
 //  gameVerkauf
 //
-//  Created by Karam Shabita on 04.06.17.
 //
 //
 

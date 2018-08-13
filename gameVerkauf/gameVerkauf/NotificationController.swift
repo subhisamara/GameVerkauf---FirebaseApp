@@ -2,8 +2,6 @@
 //  NotificationController.swift
 //  gameVerkauf
 //
-//  Created by Fabian Frey on 25.05.17.
-//  Copyright © 2017 Fabian Frey. All rights reserved.
 //
 
 import Foundation

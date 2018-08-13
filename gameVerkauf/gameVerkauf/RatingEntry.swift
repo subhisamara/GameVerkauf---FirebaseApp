@@ -2,7 +2,7 @@
 //  RatingEntry.swift
 //  gameVerkauf
 //
-//  Created by Fabian Frey on 11.07.17.
+//  Created by Subhi M. Samara on 21.06.17.
 //
 //
 

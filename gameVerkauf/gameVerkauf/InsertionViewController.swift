@@ -2,7 +2,7 @@
 //  InsertionViewController.swift
 //  gameVerkauf
 //
-//  Created by Fabian Frey on 20.06.17.
+//  Created by Subhi M. Samara on 21.06.17.
 //
 //
 

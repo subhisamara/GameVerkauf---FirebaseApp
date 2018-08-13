@@ -2,7 +2,7 @@
 //  GameEntry.swift
 //  gameVerkauf
 //
-//  Created by Adam Mahmoud on 16.06.17.
+//  Created by Subhi M. Samara on 21.06.17.
 //
 //
 import UIKit

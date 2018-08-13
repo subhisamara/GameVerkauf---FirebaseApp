@@ -2,8 +2,8 @@
 //  ViewController.swift
 	//  gameVerkauf
 //
-//  Created by Fabian Frey on 24.05.17.
-//  Copyright © 2017 Fabian Frey. All rights reserved.
+//  Created by Subhi M. Samara on 21.06.17.
+
 //
 
 import UIKit
