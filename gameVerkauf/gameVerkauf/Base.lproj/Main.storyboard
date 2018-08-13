@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bl1-B4-O8B">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5rM-EU-Fik">
+            <objects>
+                <tabBarController storyboardIdentifier="TabView" id="XKu-DB-0wx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Fn-FK-597">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e8P-vZ-adV" kind="relationship" relationship="viewControllers" id="TxV-dc-L8O"/>
+                        <segue destination="SZl-ne-vpP" kind="relationship" relationship="viewControllers" id="29B-zH-ksR"/>
+                        <segue destination="kAI-ct-5xz" kind="relationship" relationship="viewControllers" id="2uQ-Si-p4R"/>
+                        <segue destination="Ckf-wy-iif" kind="relationship" relationship="viewControllers" id="0V6-9V-eim"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uh-qe-YA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588" y="270"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G2J-iz-No7">
+            <objects>
+                <navigationController storyboardIdentifier="LoginView" id="Bl1-B4-O8B" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HUI-JJ-ly4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QTn-4d-sa0" kind="relationship" relationship="rootViewController" id="nsf-NZ-J0U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rB3-K2-BTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1265" y="269"/>
+        </scene>
+        <!--Insertion-->
+        <scene sceneID="QdF-Mj-cOY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Insertion" id="SZl-ne-vpP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6gI-xx-wAX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UB3-22-hqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="755"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="wRn-pR-KLv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LoginViewController" storyboardName="Login" referencedIdentifier="LoginViewController" id="QTn-4d-sa0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9WO-EH-icl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5F-Xc-xz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1266" y="755"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5iK-mN-pw0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Item" id="e8P-vZ-adV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="XzN-fa-oT9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qs-sH-Mww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-840" y="755"/>
+        </scene>
+        <!--chat-->
+        <scene sceneID="j2e-QB-Wfp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="chat" id="kAI-ct-5xz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6wi-q9-TJq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kfg-3h-Rze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514" y="755"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="kRy-LX-r10">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="Ckf-wy-iif" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bZ4-ft-ukn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UX7-q0-ub3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="755"/>
+        </scene>
+    </scenes>
+</document>

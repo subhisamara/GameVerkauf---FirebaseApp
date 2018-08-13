@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cu8-aX-vnP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chats-->
+        <scene sceneID="vZD-nE-gdu">
+            <objects>
+                <viewController id="3iI-lN-gSY" customClass="ChatVC" customModule="gameVerkauf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QbQ-vf-1KA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oka-x5-5WA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NPs-dp-8ND">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-qg-Bh6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="40" id="wJV-30-ofC">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wJV-30-ofC" id="krv-Tn-Hcf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.41079310060000002" green="0.56922287869999999" blue="0.66509359140000002" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3iI-lN-gSY" id="t9n-hH-BaV"/>
+                                    <outlet property="delegate" destination="3iI-lN-gSY" id="YDu-zb-LrF"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syh-yL-eyE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <items>
+                                    <navigationItem title="Messages" id="quc-98-vng"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pjp-qg-Bh6" secondAttribute="trailing" id="0np-78-8uW"/>
+                            <constraint firstItem="Pjp-qg-Bh6" firstAttribute="leading" secondItem="NPs-dp-8ND" secondAttribute="leading" id="0uF-N8-VgF"/>
+                            <constraint firstAttribute="bottom" secondItem="Pjp-qg-Bh6" secondAttribute="bottom" id="3EW-bu-It7"/>
+                            <constraint firstItem="Pjp-qg-Bh6" firstAttribute="top" secondItem="NPs-dp-8ND" secondAttribute="top" id="3vf-5V-DT3"/>
+                            <constraint firstItem="Pjp-qg-Bh6" firstAttribute="leading" secondItem="NPs-dp-8ND" secondAttribute="leading" id="63S-8V-sxa"/>
+                            <constraint firstAttribute="bottom" secondItem="Pjp-qg-Bh6" secondAttribute="bottom" id="I1w-6V-fzQ"/>
+                            <constraint firstItem="Syh-yL-eyE" firstAttribute="top" secondItem="NPs-dp-8ND" secondAttribute="top" id="LvG-g8-T0G"/>
+                            <constraint firstItem="Syh-yL-eyE" firstAttribute="leading" secondItem="NPs-dp-8ND" secondAttribute="leading" id="fwx-gr-JtO"/>
+                            <constraint firstAttribute="trailing" secondItem="Syh-yL-eyE" secondAttribute="trailing" id="pTv-Re-ndy"/>
+                            <constraint firstItem="Pjp-qg-Bh6" firstAttribute="top" secondItem="Syh-yL-eyE" secondAttribute="bottom" id="r5z-wM-imH"/>
+                            <constraint firstAttribute="trailing" secondItem="Pjp-qg-Bh6" secondAttribute="trailing" id="vkY-qV-ADS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="icons8-Chat-64" id="vR9-88-hAW"/>
+                    <navigationItem key="navigationItem" title="Chats" id="XLl-W3-cdH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Pjp-qg-Bh6" id="VNM-NK-al1"/>
+                        <segue destination="yst-s9-Qgl" kind="show" identifier="ChatSegue" id="n5N-Ts-JFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHd-nQ-AbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293.5999999999999" y="1880.5097451274364"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="qVm-hg-rxN">
+            <objects>
+                <viewController storyboardIdentifier="MessagesExchangeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yst-s9-Qgl" customClass="MessagesExchangeVC" customModule="gameVerkauf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbr-4G-MwS"/>
+                        <viewControllerLayoutGuide type="bottom" id="BvH-yH-Q3g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ZX-Hp-nEB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat" id="de4-aN-9P5"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="navigation" destination="de4-aN-9P5" id="KLl-tH-pLd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hR1-lI-yXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3430" y="1881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1UA-e4-xtu">
+            <objects>
+                <navigationController storyboardIdentifier="chatNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cu8-aX-vnP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="x3B-Ah-IFw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3iI-lN-gSY" kind="relationship" relationship="rootViewController" id="K5a-Rf-XYT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5i-Bj-cFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="1881"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-Chat-64" width="32" height="32"/>
+    </resources>
+</document>
