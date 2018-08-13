@@ -13,7 +13,7 @@ Zur anfang diese steps folgen:
             in cmd: dir
     1. git config --global user.name "UserName"
     2. git config --global user.email "email@cip.ifi.lmu.de"
-3. git clone https://gitlab.cip.ifi.lmu.de/samara/ios-ss17.git
+3. git clone https://github.com/subhisamara/GameVerkauf---FirebaseApp.git
 4. Falls nötig: cd existing_folder
 5. git checkout master
 6. git pull
